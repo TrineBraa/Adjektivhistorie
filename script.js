@@ -9,11 +9,11 @@ updateView()
 function updateView() {
     document.getElementById("app").innerHTML = /*HTML*/ `
     <div id="storyDiv">
-        <div>There was a
-            <div id="wordOptionOne">${optionOne}</div>
-            <div id="wordOptionTwo">${optionTwo}</div> that
-            <div id="wordOptionThree">${optionThree}</div> into a
-            <div id="wordOptionFour">${optionFour}</div>, it was a great adventure. The End
+        <div>There was a </div><div id="wordOptionOne"> ${optionOne} </div>
+            <div id="wordOptionTwo"> ${optionTwo} </div><div>that</div>
+            <div id="wordOptionThree"> ${optionThree} </div><div>into a</div> 
+            <div id="wordOptionFour"> ${optionFour}</div>
+            <div>, it was a great adventure. The End</div>
         </div>
     </div>
     <br />
@@ -58,3 +58,5 @@ function addWord4(innerHTML) {
     optionFour = innerHTML;
     document.getElementById("wordOptionFour").innerHTML = `${optionFour}`;
 }
+
+updateView()
